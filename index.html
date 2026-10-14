@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>あやかき時空管理局</title>
     <style>
-      body{background-color:black;color:white;}
-      h2{padding-top:12px;border-top:4px solid #FFF;}
-      img{width:100%;}
-      a{color:#FFF;}
+      :root{color-scheme:dark;}
+      html{-webkit-text-size-adjust:100%;}
+      body{background:#000;color:#fff;font-family:system-ui,"Yu Gothic UI","Noto Sans JP",sans-serif;font-size:17px;line-height:1.8;max-width:42rem;margin:0 auto;padding:16px max(16px,env(safe-area-inset-right)) calc(32px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));}
+      h1{font-size:1.5rem;line-height:1.4;margin:0 0 24px;}
+      h2{font-size:1.25rem;line-height:1.5;margin:40px 0 12px;padding-top:12px;border-top:1px solid #fff;}
+      h3{font-size:1rem;margin:20px 0 4px;color:#bbb;font-weight:normal;}
+      article:first-of-type h2{margin-top:0;}
+      p,ul{margin:8px 0;}
+      ul{padding-left:1.4em;}
+      li{margin:4px 0;}
+      a{color:#fff;text-underline-offset:3px;}
+      a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid #fff;outline-offset:2px;}
+      summary{cursor:pointer;padding:8px 0;}
+      details{margin:8px 0;}
+      details[open]>summary{margin-bottom:4px;}
+      label{display:block;padding:6px 0;}
+      input[type=checkbox]{width:1.2em;height:1.2em;margin-right:.4em;vertical-align:-.2em;accent-color:#fff;}
+      img{display:block;width:100%;height:auto;}
     </style>
   </head>
   <body>
     <h1>あやかき時空管理局</h1>
+    <!-- v1.0.0 -->
     <article>
       <h2>アクセス</h2>
       <details>
-        <summary>2日午後から夜</summary>
+        <summary>2日午後から夜(タップで詳細を表示/非表示)</summary>
         <ul>
           <li>1530に終業</li>
           <li>1600までに帰宅</li>
@@ -58,16 +73,25 @@
       <ul>
         <li><label><input type="checkbox"> <a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/%E9%85%92%E5%88%97%E7%A3%AF%E5%89%8D%E7%A5%9E%E7%A4%BE%E3%80%81%E3%80%92311-1202+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%B2%E3%81%9F%E3%81%A1%E3%81%AA%E3%81%8B%E5%B8%82%E7%A3%AF%E5%B4%8E%E7%94%BA%EF%BC%94%EF%BC%96%EF%BC%90%EF%BC%97%E2%88%92%EF%BC%92/%E5%8B%9D%E7%94%B0%E9%A7%85%E3%80%81%E3%80%92312-0025+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%B2%E3%81%9F%E3%81%A1%E3%81%AA%E3%81%8B%E5%B8%82%E6%AD%A6%E7%94%B0/@36.3694292,140.4911449,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x6022326e69ada685:0x65be2a5a4ded4e52!2m2!1d140.6235!2d36.382379!1m5!1m1!1s0x60222f774350d057:0xec43a17e50300f69!2m2!1d140.5242313!2d36.3944787!3e3?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D">勝田駅に戻る</a></label></li>
       </ul>
-      <img loading="lazy" src="0.avif">
+      <details>
+        <summary>写真を開閉</summary>
+        <img loading="lazy" src="0.avif">
+      </details>
       <h2>☆ 車両装飾とかその辺</h2>
       <h3>車内アナウンス（全車両）</h3>
       <p>登りと下りで別のアナウンスが聴ける</p>
       <h3>特別仕様車（1両実装）</h3>
       <p>ヘッドマーク、窓、広告があやかき仕様に</p>
-      <img loading="lazy" src="1.avif">
+      <details>
+        <summary>写真を開閉</summary>
+        <img loading="lazy" src="1.avif">
+      </details>
       <h3>パスケース付き1日フリーきっぷ</h3>
       <p>現地販売</p>
-      <img loading="lazy" src="3.avif">
+      <details>
+        <summary>写真を開閉</summary>
+        <img loading="lazy" src="3.avif">
+      </details>
     </article>
     <article>
       <h2><a href="https://www.hitachikaihin.jp/" target="_blank" rel="noopener">国営ひたち海浜公園</a></h2>
@@ -81,7 +105,10 @@
       <li>茨城アンテナショップ</li>
       <li>東京銀座</li>
       </ul>
-      <img loading="lazy" src="2.avif">
+      <details>
+        <summary>写真を開閉</summary>
+        <img loading="lazy" src="2.avif">
+      </details>
     </article>
   </body>
 </html>
